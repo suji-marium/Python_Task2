@@ -1,3 +1,25 @@
+"""
+QUESTION : 2
+You are tasked with creating a system to manage electronic devices. Each device has a brand, model, and a power consumption rate. The requirements are:
+
+Create an abstract class ElectronicDevice with:
+
+An abstract method power_usage() to calculate power consumption based on device-specific behavior.
+A constructor (__init__) to initialize the brand and model of the device.
+An instance method describe() that prints out the brand and model of the device.
+A class method from_type() that creates an instance of a specific device (either Laptop or Smartphone) based on a string input.
+Create two subclasses Laptop and Smartphone that inherit from ElectronicDevice:
+
+The Laptop class should have an additional attribute battery_life (in hours) and should implement the power_usage() method as power consumption per hour of usage (50 watts per hour).
+The Smartphone class should have an additional attribute screen_size (in inches) and should implement the power_usage() method as power consumption per hour of usage (10 watts per hour).
+Demonstrate how to:
+
+Create instances of Laptop and Smartphone.
+Use the describe() method.
+Call the power_usage() method.
+Use the from_type() class method to create a device based on a string input.
+"""
+
 from abc import ABC,abstractmethod
 
 class ElectronicDevice(ABC):

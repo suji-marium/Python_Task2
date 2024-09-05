@@ -1,3 +1,25 @@
+"""
+You are building a system to model different types of employees in an organization. Employees can be either full-time or part-time. The system needs to calculate the monthly salary of each employee based on their working hours and rate of pay.
+
+The requirements are:
+
+Create an abstract class Employee with:
+
+An abstract method calculate_salary() to compute the employee’s salary.
+A constructor (__init__) that takes the name of the employee and initializes it.
+An instance method describe() that prints the employee's name and type.
+Create two subclasses FullTimeEmployee and PartTimeEmployee that inherit from Employee:
+
+The FullTimeEmployee class should have a fixed monthly salary of $3000 and should implement the calculate_salary() method to return this salary.
+The PartTimeEmployee class should have a hours_worked and hourly_rate attribute. The calculate_salary() method should compute the salary as hours_worked * hourly_rate.
+Demonstrate how to:
+
+Create instances of FullTimeEmployee and PartTimeEmployee.
+Use the describe() method.
+Call the calculate_salary() method to compute the salary.
+
+"""
+
 from abc import ABC, abstractmethod
 
 class Employee(ABC):
