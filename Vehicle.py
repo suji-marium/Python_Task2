@@ -67,3 +67,4 @@ while True:
     except Exception as e:
         print(e)
         print("Please try again with a valid vehicle type.")
+
